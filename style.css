@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet&family=Reenie+Beanie&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f5f1eb;
+    color: #332c2a;
+    font-family: "Times New Roman", serif;
+}
+
+.hero {
+    min-height: 100svh;
+    padding: 50px 24px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.portrait {
+    width: 150px;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: -10px;
+}
+
+.brand {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin: 0 0 6px;
+    white-space: nowrap;
+}
+
+.oneiric {
+    font-family: "Ballet", cursive;
+    font-size: 64px;
+    letter-spacing: 1px;
+}
+
+.by-farha {
+    font-family: "Reenie Beanie", cursive;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-left: 8px;
+}
+
+.role {
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin: 0 0 35px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: normal;
+    line-height: 1.15;
+    margin: 0 0 45px;
+}
+
+.explore {
+    display: inline-block;
+    padding: 13px 28px;
+    border: 1px solid #332c2a;
+    color: #332c2a;
+    background: transparent;
+    text-decoration: none;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.explore:hover {
+    background: #332c2a;
+    color: #f5f1eb;
+}
+.work-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 24px;
+    border-bottom: 1px solid #332c2a;
+}
+
+.work-nav a {
+    color: #332c2a;
+    text-decoration: none;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.work-page {
+    padding: 70px 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin: 0 0 25px;
+}
+
+.work-page h1 {
+    font-size: 42px;
+    font-weight: normal;
+    line-height: 1.15;
+    margin: 0 0 65px;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+}
+
+.work-card {
+    display: block;
+    color: #332c2a;
+    text-decoration: none;
+}
+
+.work-card img {
+    width: 50%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.work-card p {
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.empty-card {
+    min-height: 260px;
+    border-top: 1px solid #332c2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+
+.empty-card div {
+    font-family: "Ballet", cursive;
+    font-size: 50px;
+}
+.work-images {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.work-images img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+}
+.fashion-card .fashion-number {
+    font-family: "Ballet", cursive;
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.fashion-card p {
+    font-family: "Times New Roman", serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin: 0 0 15px;
+}
+
+.work-images {
+    display: flex;
+    gap: 12px;
+}
+
+.work-images img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+}
+.fashion-description {
+    font-family: "Times New Roman", serif;
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 500px;
+    margin: 0;
+    color: #77706c;
+}
+/* Expandable services list */
+
+.services-list {
+    margin-top: 55px;
+    border-top: 1px solid #d8d0c7;
+}
+
+.service {
+    border-bottom: 1px solid #d8d0c7;
+}
+
+.service summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 23px 0;
+    cursor: pointer;
+}
+
+.service summary::-webkit-details-marker {
+    display: none;
+}
+
+.service-number {
+    font-family: "Ballet", cursive;
+    font-size: 38px;
+    line-height: 1;
+    min-width: 38px;
+}
+
+.service-name {
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    flex: 1;
+}
+
+.service-toggle {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.service-toggle::before,
+.service-toggle::after {
+    content: "";
+    position: absolute;
+    background: #332c2a;
+}
+
+.service-toggle::before {
+    width: 14px;
+    height: 1px;
+    top: 8px;
+    left: 1px;
+}
+
+.service-toggle::after {
+    width: 1px;
+    height: 14px;
+    top: 1px;
+    left: 7px;
+}
+
+.service[open] .service-toggle::after {
+    display: none;
+}
+
+.service-content {
+    padding: 0 0 28px 54px;
+}
+
+.service-gallery {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.service-gallery img {
+    display: block;
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+}
+
+.service-description {
+    max-width: none
+    width: 100%;
+    color: #77706c;
+    font-family: "Times New Roman", serif;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 480px) {
+    .service summary {
+        gap: 12px;
+    }
+
+    .service-name {
+        font-size: 14px;
+    }
+
+    .service-content {
+        padding-left: 0;
+    }
+
+    .service-gallery img {
+        width: 38%;
+    }
+}
+/* Calligraphy photo gallery */
+
+.service:first-child .service-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.service:first-child .service-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 480px) {
+    .service:first-child .service-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+}
+.smaller-image {
+    width: 25% !important;
+}
+.smaller-henna2 {
+    width: 24% !important
+    
+}
+.smaller-henna3 {
+    width: 21% !important
+}
+.smaller-henna4 {
+    width: 29% !important
+}
+.rae-smaller {
+    width: 30% !important
+   }
+
+.small-clr {
+    width: 26.5% !important
+}
+/* Contact section */
+.contact {
+  padding: 100px 8%;
+  text-align: center;
+  background-color: #f5f1eb;
+  color: #332c2a;
+}
+
+.section-label {
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+}
+
+.contact h2 {
+  font-family: "Times New Roman", serif;
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: normal;
+  margin-bottom: 18px;
+}
+
+.contact-text {
+  max-width: 440px;
+  margin: 0 auto 35px;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.contact-links a {
+  color: #332c2a;
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 1px solid #332c2a;
+  padding-bottom: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.contact-links a:hover {
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 70px 7%;
+  }
+
+  .contact-links {
+    gap: 22px;
+  }
+}
+
+/* Keep HOME and CONTACT together at the top right */
+.work-nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Make CONTACT look exactly like the existing nav links */
+.contact-wrap {
+    position: relative;
+}
+
+.work-nav .contact-btn {
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #332c2a;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Minimal dropdown, matching the existing website */
+.contact-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 18px);
+    right: 0;
+    min-width: 210px;
+    padding: 16px 18px;
+    background: #f5f1eb;
+    border: 1px solid #332c2a;
+    z-index: 1000;
+}
+
+.contact-dropdown.show {
+    display: block;
+}
+
+.work-nav .contact-dropdown a {
+    display: block;
+    font-family: "Times New Roman", serif;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0.3px;
+    line-height: 1.8;
+    text-transform: none;
+    color: #332c2a;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    padding: 4px 0;
+}
+
+.work-nav .contact-dropdown a:hover {
+    opacity: 0.6;
+}
+.work-nav .contact-wrap {
+    transform: translateY(-2.5px);
+}
+.location {
+    font-family: "Times New Roman", serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #332c2a;
+    margin-top: -30px;
+}
+
+.hero h1 {
+    margin-top: 200px;
+}
+/* Soft colour band behind the tagline and explore link */
+.hero-band {
+    background-color: #d4c8b8;
+    padding: 28px 35px 32px;
+    margin-top: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.hero-band h1 {
+    margin-top: 0;
+}
+
+/* Keep the 
