@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected Work — Oneiric by Farha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+function toggleContact() {
+    document.getElementById("contactDropdown")
+        .classList.toggle("show");
+}
+
+document.addEventListener("click", function(event) {
+    const wrap = document.querySelector(".contact-wrap");
+    const dropdown = document.getElementById("contactDropdown");
+
+    if (!wrap.contains(event.target)) {
+        dropdown.classList.remove("show");
+    }
+});
+</script>
+<body>
+
+<nav class="work-nav">
+    <a href="index.html">ONEIRIC BY FARHA</a>
+
+    <div class="work-nav-actions">
+        <a href="index.html">HOME</a>
+
+        <div class="contact-wrap">
+            <button
+                type="button"
+                class="contact-btn"
+                onclick="toggleContact()"
+            >CONTACT</button>
+
+            <div class="contact-dropdown" id="contactDropdown">
+                <a href="tel:+966510012197">+966 510012197</a>
+                <a href="oneiricbyfarha@gmail.com">
+                    oneiricbyfarha@gmail.com
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <main class="work-page">
+
+        <p class="section-label">A LITTLE OF WHAT I DO</p>
+
+        <h1>Selected works.</h1>
+
+        <div class="services-list">
+
+            <details class="service">
+                <summary>
+                    <span class="service-number">01</span>
+                    <span class="service-name">Calligraphy</span>
+                    <span class="service-toggle"></span>
+                </summary>
+                <div class="service-content">
+                    <p class="service-description">
+                        There’s a certain beauty in turning words into something to be held and treasured. From names and meaningful phrases to little details that make an occasion special, I love creating calligraphy that adds a personal touch to every piece.
+                    </p>
+                    <div class="service-gallery">
+                        <img src="images/english floral calli.jpeg" alt="Calligraphy artwork">
+                        <img src="images/floral calli verse.jpeg" alt="Calligraphy artwork">
+                        <img src="images/bookmarks.jpeg" alt="Calligraphy artwork">
+                        <img src="images/english calli tags.jpeg" alt="Calligraphy artwork"> 
+                        <img src="images/arabic calli namecards.jpeg" alt="Calligraphy artwork">
+                        <img src="images/leaf calli verse.jpeg" alt="Calligraphy artwork">
+                        <img src="images/leaf calli verse arabic.jpeg" alt="Calligraphy artwork">
+                        
+                    </div>
+                </div>
+            </details>
+
+            <details class="service">
+                <summary>
+                    <span class="service-number">02</span>
+                    <span class="service-name">Fashion Illustrations</span>
+                    <span class="service-toggle"></span>
+                </summary>
+                <div class="service-content">
+                    <div class="service-gallery">
+                        <img src="images/fashion illustration 01.jpeg" alt="Fashion illustration one">
+                        <img src="images/fashion illustration 02.jpeg" alt="Fashion illustration two">
+                    </div>
+                    <p class="service-description">
+                        There’s something special about capturing an outfit as a little
+                        piece of art. I create personalised fashion illustrations for
+                        weddings, gatherings, and brand experiences, bringing together
+                        the colours, outfits, and details that make each event its own.
+                    </p>
+                </div>
+            </details>
+
+            <details class="service">
+                <summary>
+                    <span class="service-number">03</span>
+                    <span class="service-name">Bottle Painting</span>
+                    <span class="service-toggle"></span>
+                </summary>
+                <div class="service-content">
+                    <p class="service-description">
+                        Giving bottles a new character through hand-painted florals, details, and thoughtful transformations
+                    </p>
+                    <div class="service-gallery">
+                        <img src="images/davidoff.jpeg" alt="Hand-painted bottle">
+                        <img src="images/mud bottle.jpeg" alt="Hand-painted bottle">
+                        <img src="images/hawas painting.jpeg" alt="Hand-painted bottle">
+                    </div>
+                </div>
+            </details>
+
+
+            <details class="service">
+                <summary>
+                    <span class="service-number">04</span>
+                    <span class="service-name">Portraits</span>
+                    <span class="service-toggle"></span>
+                </summary>
+                <div class="service-content">
+                    <p class="service-description">
+                        Hyperrealistic portraiture, created in the studio with a focus on precision, expression, and lifelike detail.
+                    </p>
+                    <div class="service-gallery">
+                        <img src="images/sona.jpeg" alt="Portrait artwork" class="smaller-image">
+                        <img src="images/colour portrait.jpeg" alt="Portrait artwork" class="small-clr">
+                        <img src="images/dq.jpeg" alt="Portrait artwork">
+
+                    </div>
+                </div>
+            </details>
+
+              <details class="service">
+                <summary>
+                    <span class="service-number">05</span>
+                    <span class="service-name">Digital Illustrations</span>
+                    <span class="service-toggle"></span>
+                </summary>
+                <div class="service-content">
+                    <p class="service-description">
+                        Detailed digital portrait illustration created in Procreate, exploring expression, texture, and the little details that make each face unique, each done in different style.
+                    </p>
+                    <div class="service-gallery">
+                        <img src="images/rae.jpeg" alt="illustration" class="rae-smaller">
+                        <img src="images/kenza.jpeg" alt="illustration">
+                        <img src="images/jfc.jpeg" alt="illustration">
+
+                    </div>
+                </div>
+            </details>
+
+            <details class="service">
+                <summary>
+                    <span class="service-number">06</span>
+                    <span class="service-name">Henna</span>
+                    <span class="service-toggle"></span>
+                </summary>
+                <div class="service-content">
+                    <p class="service-description">
+                        From intricate bridal henna to live henna experiences and themed designs for Eid and special occasions, each piece can be thoughtfully created to suit the moment and its story.
+                    </p>
+                    <div class="service-gallery">
+                        <img src="images/henna 1.jpeg" alt="Henna design">
+                        <img src="images/henna 2.jpeg" alt="Henna design" class="smaller-henna2">
+                        <img src="images/henna 3.jpeg" alt="Henna design" class="smaller-henna3">
+                        <img src="images/henna 4.jpeg" alt="Henna design" class="smaller-henna4">
+                    </div>
+                </div>
+            </details>
+
+            <details class="service">
+                <summary>
+                    <span class="service-number">07</span>
+                    <span class="service-name">Made on Request</span>
+                    <span class="service-toggle"></span>
+                </summary>
+                <div class="service-content">
+                    <p class="service-description">
+                        A collection of custom creations, personalised details, and creative possibilities made to suit your vision.
+                        - Hot foiling
+                        - Live Engraving
+                        - Air dry keychains
+                        - Fridge magnets
+                        - Custom stamps
+                        and more, on request.
+                    </p>
+                
+
+        </div>
+
+    </main>
+
+</body>
+</html>
